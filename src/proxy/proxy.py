@@ -65,8 +65,8 @@ class SSL_Proxy(object):
 
 
 if __name__ == '__main__':
-	http_proxy = HTTP_Proxy('192.168.1.115', 9000)
-	ssl_proxy = SSL_Proxy('192.168.1.115', 4444)
+	http_proxy = HTTP_Proxy('192.168.1.115', 9000. 'fake.html')
+	ssl_proxy = SSL_Proxy('192.168.1.115', 4444, 'fake.html')
 	jobs = []
    	for i in range (4):
    		p = multiprocessing.Process(target=http_proxy._http_client_handler)
