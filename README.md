@@ -5,7 +5,8 @@ This tool is designed to make it super easy for you to directly inject content i
 # How it works
 
 Theseus uses an arp cache poison to redirect the victims traffic to the attackes box then will configue
-iptables from you so all you have to do is give it a couple of IPs and you content to inject!
+iptables from you so all you have to do is give it is victims, routers and your local Ip then a path to
+the html payload to be injected
 
 It has a HTTP proxy running on port 9000 meaning that the victim will connect to this thinking its the real
 server, from here you have a choice how you want to mess with the content.
@@ -17,4 +18,4 @@ encryption error.
 # Future
 
 In the future theseus will also run a DNS server so it can then fully convince the browser that the SSL proxy is
-the real deal and therefore open up communication with it
+the real deal and therefore open up HTTPS communication with it.
