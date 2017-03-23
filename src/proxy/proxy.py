@@ -3,12 +3,16 @@ from __future__ import print_function
 import socket
 import multiprocessing
 import ssl
+import sys
 
 class HTTP_Proxy(object):
 	"""This is the http page spoofing proxy"""
 	def __init__(self, bind_address, bind_port, html_file):
 		global http_responce, s, html
 		super(HTTP_Proxy, self).__init__()
+		with open('proxy.log', 'w') as f:
+			f.write('')
+			f.close()
 		http_responce = "HTTP/1.1 200\r\nContent-Type: text/html\r\n{}\r\n"
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -16,8 +20,8 @@ class HTTP_Proxy(object):
 		try:
 			s.bind((bind_address, bind_port))
 		except socket.error:
-			print("\033[1;31mPort Alredy Open... Cant Bind\033[00m")
-			exit()
+			sys.stdout.write("[\033[1;31m+\033[00m] Port {} already open... can\'t bind\n".format(bind_port))
+			sys.exit(-1)
 		s.listen(5)
 		with open(html_file, 'rb') as file:
 			html = file.read()
@@ -31,14 +35,18 @@ class HTTP_Proxy(object):
 			req = sock.recv(1024)
 			try:
 				data = req.decode('utf-8')
-				with open('proxy.log', 'wb') as file:
+				with open('proxy.log', 'ab') as file:
 					file.write(data)
 					file.close()
 				data = data.splitlines()
 				if 'Accept:' not in data[1]:
-					print(addr[0], "-->", data[1][6:], "-->" ,data[0])
-				else:
-					print(addr[0], "--> Unknown -->" ,data[0])
+					if len(data[0]) > 40:
+						long_data = data[0][:40]+'...'
+					else:
+						long_data = data[0][:40]
+					nom = socket.gethostbyaddr(addr[0])[0]
+					nom = nom.replace('.home', " ")
+					print("\t[\033[1;33m+\033[00m]", nom+"-->", data[1][6:], "-->" ,long_data)
 			except: pass
 			sock.send(http_responce.format("\n"+html+" <script>window.stop();</script>"))
 			if 'http://' in req:
