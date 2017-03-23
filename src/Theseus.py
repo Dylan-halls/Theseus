@@ -96,9 +96,13 @@ class Theseus(object):
 			sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(rname))
 
 		if bool(cfg.get('Proxy-Settings', 'Running')) == True:
+			cert = cfg.get('Proxy-Settings', 'SSl_Certificate')
+			key = cfg.get('Proxy-Settings', 'SSl_Key')
+
 			http_proxy = HTTP_Proxy(local, int(bhttp), html_file)
 			sys.stdout.write("[\033[1;34m+\033[00m] Started HTTP proxy on port {}\n".format(bhttp))
-			ssl_proxy = SSL_Proxy(local, int(bssl), html_file)
+			
+			ssl_proxy = SSL_Proxy(local, int(bssl), html_file, cert, key)
 			sys.stdout.write("[\033[1;34m+\033[00m] Started SSL proxy on port {}\n".format(bssl))
 			sys.stdout.write("[\033[1;34m+\033[00m] Attack Ready...\n\n")
 
