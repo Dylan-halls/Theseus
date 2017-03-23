@@ -58,11 +58,11 @@ class HTTP_Proxy(object):
 
 class SSL_Proxy(object):
 	"""This is the https page spoofing proxy"""
-	def __init__(self, bind_address, bind_port, html_file):
+	def __init__(self, bind_address, bind_port, html_file, cert_file, key_file):
 		global ssl_socket, bs
 		super(SSL_Proxy, self).__init__()
 		context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
-		context.load_cert_chain(certfile="/root/Documents/Theseus/src/proxy/certificates/theseus.crt", keyfile="/root/Documents/Theseus/src/proxy/certificates/theseus.key")
+		context.load_cert_chain(certfile=cert_file, keyfile=key_file)
 		bs = socket.socket()
 		bs.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		#print("SSL -->", bind_address, bind_port)
