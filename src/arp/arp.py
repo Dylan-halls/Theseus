@@ -1,11 +1,15 @@
 from __future__ import print_function
-from ping import Arp_Ping
 import socket
 import binascii
 import threading
 import sys
 import time
 import argparse
+
+try:
+	from arp.ping import Arp_Ping
+except ImportError:
+	from ping import Arp_Ping
 
 class Arp_Spoof(object):
 	"""Does the arp spoof for the set up"""
@@ -31,7 +35,7 @@ class Arp_Spoof(object):
 			redirect_to_mac = binascii.unhexlify(''.join(redirect_to_mac.split(':')))
 
 			#Ethernet headers
-			eth_head =  target_mac + redirect_to_mac + arp_header_code
+			eth_head =  target_mac + redirect_to_mac + bytes(arp_header_code.encode('utf-8'))
 
 			#Arp headers
 			header_type = '\x00\x01'
@@ -46,7 +50,7 @@ class Arp_Spoof(object):
 			spoofed_part = redirect_to_mac + redirect_to_ip + target_mac + target_ip
 
 			#Final Packet
-			arp_packet = eth_head + arp_head + spoofed_part
+			arp_packet = eth_head + bytes(arp_head.encode('utf-8')) + spoofed_part
 
 			return arp_packet
 

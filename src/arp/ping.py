@@ -32,7 +32,7 @@ class Arp_Ping(object):
 			redirect_to_mac = binascii.unhexlify(''.join(responce_to_mac.split(':')))
 
 			#Ethernet headers
-			eth_head =  target_mac + redirect_to_mac + arp_header_code
+			eth_head =  bytes(target_mac)+bytes(redirect_to_mac)+bytes(arp_header_code.encode('utf-8'))
 
 			#Arp headers
 			header_type = '\x00\x01'
@@ -46,12 +46,12 @@ class Arp_Ping(object):
 			#Spoofed Bit
 			spoofed_part = redirect_to_mac + redirect_to_ip + target_mac + target_ip
 			#Final Packet
-			arp_packet = eth_head + arp_head + spoofed_part
+			arp_packet = bytes(eth_head) + bytes(arp_head.encode('utf-8')) + bytes(spoofed_part)
 			return arp_packet
 
 	def format_mac(self, bin_mac):
 		temp = bin_mac.replace(":", "").replace("-", "").replace(".", "")
- 		return temp[:2] + ":" + ":".join([temp[i] + temp[i+1] for i in range(2,12,2)])
+		return temp[:2] + ":" + ":".join([temp[i] + temp[i+1] for i in range(2,12,2)])
 
 	def await_responce(self, iface):
 		global rev
@@ -61,18 +61,18 @@ class Arp_Ping(object):
 		eth = pkt[0][0:14]
 		eth_d = struct.unpack("!6s6s2s", eth)
 		res = binascii.hexlify(eth_d[0])
-		
-		dst_mac = self.format_mac(res)
 
- 		local_mac = open('/sys/class/net/{}/address'.format(iface)).read().strip('\n')
+		dst_mac = self.format_mac(res.decode('utf-8'))
+
+		local_mac = open('/sys/class/net/{}/address'.format(iface)).read().strip('\n')
  		
- 		if dst_mac == local_mac:
- 			stop_time = datetime.datetime.now()
- 			arp_h = pkt[0][14:42]
- 			arp_d = struct.unpack("2s2s1s1s2s6s4s6s4s", arp_h)
- 			timee = stop_time - start_time
- 			rev += 1
- 			return self.format_mac(binascii.hexlify(arp_d[5])), arp_d[6], timee.total_seconds() * 1000
+		if dst_mac == local_mac:
+			stop_time = datetime.datetime.now()
+			arp_h = pkt[0][14:42]
+			arp_d = struct.unpack("2s2s1s1s2s6s4s6s4s", arp_h)
+			timee = stop_time - start_time
+			rev += 1
+			return self.format_mac(binascii.hexlify(arp_d[5]).decode('utf-8')), arp_d[6], timee.total_seconds() * 1000
 
 	def ping(self, addr):
 		global start_time, sent
