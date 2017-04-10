@@ -7,4 +7,7 @@ python:
 
 install: "pip3 install dnslib"
 
-script: sudo src/Theseus.py
+before_install:
+ - chmod +x src/Theseus.py
+
+script: sudo python3 src/Theseus.py
