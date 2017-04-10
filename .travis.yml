@@ -5,7 +5,9 @@ sudo: required
 python:
   - "3.5"
 
-install: "pip3 install dnslib"
+install: 
+  - "pip3 install dnslib"
+  - "pip3 install pyyaml ua-parser user-agents"
 
 before_install:
  - chmod +x src/Theseus.py
