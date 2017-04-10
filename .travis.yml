@@ -1,0 +1,15 @@
+language: python
+
+python:
+	
+	- 3
+	-3.5
+
+before_script:
+	
+	- pip3 install pyyaml ua-parser user-agents
+	- pip3 install dnslib
+
+script:
+
+	- /src/Theseus.py
