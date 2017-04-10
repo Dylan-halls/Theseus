@@ -6,4 +6,3 @@ python:
 install: "pip3 install user-agents"
 install: "pip3 install dnslib"
 
-script: src/Theseus.py -h
