@@ -1,4 +1,4 @@
-# Theseus 1.1
+# Theseus v1.1
 [![Build Status](https://travis-ci.org/Dylan-halls/Theseus.svg?branch=master)](https://travis-ci.org/Dylan-halls/Theseus)
 
 ## Introduction
