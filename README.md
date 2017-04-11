@@ -1,5 +1,5 @@
 # Theseus 1.1
-https://travis-ci.org/Dylan-halls/Theseus.svg?branch=master
+[![Build Status](https://travis-ci.org/Dylan-halls/Theseus.svg?branch=master)](https://travis-ci.org/Dylan-halls/Theseus)
 
 ## Introduction
 
