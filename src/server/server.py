@@ -1,6 +1,6 @@
 #from OpenSSL import SSL
 import socket
-from user_agents import parse
+from dependencies.user_agents import parse
 import multiprocessing
 import ssl
 import sys
@@ -58,12 +58,12 @@ class HTTP_Server(object):
 				Referer = data.splitlines()[6]
 				Connection = data.splitlines()[7]
 				Cache_Control = data.splitlines()[8]
-				ua = parse(user_agent)
 			except IndexError:
 				pass
 
 
 			#Print Status Message
+			ua = parse(user_agent)
 			print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
 
 			#Send File
