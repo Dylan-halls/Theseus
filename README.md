@@ -1,5 +1,5 @@
 # Theseus 1.1
-//travis stuff
+https://travis-ci.org/Dylan-halls/Theseus.svg?branch=master
 
 ## Introduction
 
@@ -34,3 +34,7 @@ once you have your targets IP address you can now run Thesues against them.
 And for execution
     
     $ python3 Theseus.py --target 192.168.1.208 --interface wlan0
+    
+## How it works
+
+
