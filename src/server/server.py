@@ -63,8 +63,10 @@ class HTTP_Server(object):
 
 
 			#Print Status Message
-			ua = parse(user_agent)
-			print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
+			try:
+				ua = parse(user_agent)
+				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
+			except UnboundLocalError: pass
 
 			#Send File
 			if path == '/':
