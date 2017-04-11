@@ -92,7 +92,7 @@ class Theseus(object):
 
 			p = Arp_Ping(args.interface)
 			sys.stdout.write("[\033[1;34m+\033[00m] Sending arp ping to {} \n".format(args.target))
-			p.ping(args.target)
+			p.ping(args.target, local, args.interface)
 			while True:
 				tm = p.await_responce(args.interface)
 				try:
