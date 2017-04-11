@@ -78,8 +78,8 @@ class Theseus(object):
 
 	def attack_dns_spoof(self):
 		if bool(cfg.get('DNS-Spoof-Settings', 'Running')) == True:
-			dns = DNS_Server()
 			local = cfg.get('Theseus-Settings', 'local_ip_address')
+			dns = DNS_Server(local)
 			jobs = []
 			for i in range(4):
 		   		p = multiprocessing.Process(target=self.dns_spoof, args=(dns, local))
