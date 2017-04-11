@@ -1,21 +1,36 @@
-# Theseus
+# Theseus 1.1
+//travis stuff
 
-This tool is designed to make it super easy for you to directly inject content into a victims web session
+## Introduction
 
-# How it works
+Theseus is a MITM attack tool that is capable of hijacking HTTP sessions and then forcing html, css, javacript, images, etc
+on to the targets browser screen.
 
-Theseus uses an arp cache poison to redirect the victims traffic to the attackes box then will configue
-iptables from you so all you have to do is give it is victims, routers and your local Ip then a path to
-the html payload to be injected
+With this tool you wont have to worry about having to setup the arpspoof or dnspoof your self (Theseus will even get the targets mac address for you)
 
-It has a HTTP proxy running on port 9000 meaning that the victim will connect to this thinking its the real
-server, from here you have a choice how you want to mess with the content.
-SSL isn't much of a problem because there is a SSL proxy running on port 4444 this will recive a connect request
-from the browser and then will reply with a 200 OK, then the victims browser will send the encrypted data to the
-proxy, it will just keep hold of it so that if any thing the browser will get a time out error rather that a scarey
-encryption error.
+## Installation
 
-# Future
+First you need to clone a copy of the code to you local machine
 
-In the future theseus will also run a DNS server so it can then fully convince the browser that the SSL proxy is
-the real deal and therefore open up HTTPS communication with it.
+    $ git clone https://github.com/Dylan-halls/Theseus/
+    
+Now you have a copy you have the choice to either use the defult payloads of use your own. To make your own basic payload all you need is a basic knowledge of html or javascript. For more complex payloads you can since Theseus acts like a legitimate HTTP server you can server up a fully functional html, css, javascript website
+
+    $ cd src/server/Payloads/
+
+## Running Theseus
+
+To attack a target all you need to know is there ip address, which can be easily obtained with a simple nmap scan of the network or an arp netdiscover scan
+
+    $ nmap 192.168.1.*
+    $ netdiscover
+
+once you have your targets IP address you can now run Thesues against them.
+
+- use -h/--help for a list of additional switches
+- use -t/--target for the targets ip
+- use the -i/--interface for your current interface
+
+And for execution
+    
+    $ python3 Theseus.py --target 192.168.1.208 --interface wlan0
