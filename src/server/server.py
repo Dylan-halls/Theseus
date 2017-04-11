@@ -1,6 +1,6 @@
 #from OpenSSL import SSL
 import socket
-from dependencies.user_agents import parse
+from user_agents import parse
 import multiprocessing
 import ssl
 import sys
@@ -11,7 +11,7 @@ class HTTP_Server(object):
 	def __init__(self, bind_address, bind_port, html_file):
 		global http_responce, s, html
 		super(HTTP_Server, self).__init__()
-		with open('server/server.log', 'w') as f:
+		with open('server.log', 'w') as f:
 			f.write('')
 			f.close()
 		#TODO: Change responce content-type to relevant type
