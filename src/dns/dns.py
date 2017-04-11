@@ -58,7 +58,7 @@ class DNS_Server(object):
 		global s, dp
 		super(DNS_Server, self).__init__()
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		s.bind(('192.168.1.115', 53))
+		s.bind((local_ip, 53))
 		dp = Decode_Packet()
 
 	def decode_packet(self, pkt):
