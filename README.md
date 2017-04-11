@@ -36,14 +36,14 @@ Once you have your targets IP address you can now run Theseus against them.
     
 ## How it works
 
-1. First theseus will configue iptables on your machine, to redirect all victims traffic to the right services on the right port
+1. First Theseus will configue iptables on your machine, to redirect all victims traffic to the right services on the right port
 
-2. Second theseus will read the 'theseus.cfg' file in order to be able to get vital infomation that it needs about the machine, like its local ip address and the correct paths to the payloads
+2. Second Theseus will read the 'theseus.cfg' file in order to be able to get vital infomation that it needs about the machine, like its local ip address and the correct paths to the payloads
 
-3. Third theseus will start-up the dns server on port 53, the dns server starts up early because it is being ran on its own separate porocces and there for won't clash with the HTTP server on anything
+3. Third Theseus will start-up the dns server on port 53, the dns server starts up early because it is being ran on its own separate porocces and there for won't clash with the HTTP server on anything
 
 4. Thesues will now send out an arp request on a broudcast mac address (FF:FF:FF:FF:FF:FF) for the targets mac so therefore the entire network will see this and then it will respond with the targets mac address
 
-5. The second it recives the mac address it will begin the arp cache poison stage of the attack, this is used in order to get all of the targets traffic being sent to the outside world to go to us. This is the crux of the attack. In the future theseus should be able to support icmp redirect spoofing and dhcp spoofing to give the it a bit more functionality
+5. The second it recives the mac address it will begin the arp cache poison stage of the attack, this is used in order to get all of the targets traffic being sent to the outside world to go to us. This is the crux of the attack. In the future Theseus should be able to support icmp redirect spoofing and dhcp spoofing to give the it a bit more functionality
 
-6. Now theseus will start the HTTP server and then begin the attack. The first part of hijacking the session is that it will sniff for DNS traffic, when it does find some it will decode the packet and then craft a DNS responce, this will enable the target to have its DNS cache posined with the HTTP servers ip address. In version 1.0 theseus didn't have a DNS spoof functunality and therefore only have a 50% success rate, beacuse the browser knew the real ip address of the web server so therefore made the HTTP servers job alot harder. Once the HTTP server has a connection it will use the user-agents library to be able to class the targets device by its user agent header and then it will send the payload.html file then sit back and just send any requested files after that.
+6. Now Theseus will start the HTTP server and then begin the attack. The first part of hijacking the session is that it will sniff for DNS traffic, when it does find some it will decode the packet and then craft a DNS responce, this will enable the target to have its DNS cache posined with the HTTP servers ip address. In version 1.0 Theseus didn't have a DNS spoof functunality and therefore only have a 50% success rate, beacuse the browser knew the real ip address of the web server so therefore made the HTTP servers job alot harder. Once the HTTP server has a connection it will use the user-agents library to be able to class the targets device by its user agent header and then it will send the payload.html file then sit back and just send any requested files after that.
