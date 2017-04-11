@@ -91,11 +91,6 @@ Content-Type: image/png
 				try:
 					e_resp = """
 HTTP/1.1 200 OK
-Content-Type: text/html
-
-<link rel="icon" 
-      type="image/png" 
-      href="lock.png">
 
 """.encode('utf-8')
 					with open(payloads_folder+path, 'rb') as file:
