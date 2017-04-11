@@ -14,7 +14,6 @@ class HTTP_Server(object):
 		with open('server.log', 'w') as f:
 			f.write('')
 			f.close()
-		#TODO: Change responce content-type to relevant type
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		try:
