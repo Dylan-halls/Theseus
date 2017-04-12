@@ -1,9 +1,9 @@
 #!/bin/bash
 
-eval sudo apt-get update 
-eval sudo apt-get upgrade
-eval sudo apt-get install python3-pip
+eval sudo apt-get update -y
+eval sudo apt-get upgrade -y
+eval sudo apt-get install python3-pip -y
 eval pip3 install pyyaml 
 eval pip3 install ua-parser 
 eval pip3 install user-agents
-eval sudo apt-get install python3-dnslib
+eval sudo apt-get install python3-dnslib -y
