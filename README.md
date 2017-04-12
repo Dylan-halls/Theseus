@@ -12,6 +12,11 @@ With this tool you will not have to worry about having to setup the arpspoof or 
 First you need to clone a copy of the code to your local machine:
 
     $ git clone https://github.com/Dylan-halls/Theseus/
+
+Then you will need to install the dependecies for Theseus by running:
+    
+    $ chmod +x configure
+    $ ./configure
     
 Now you have a copy you have the choice to either use the default payloads or use your own. To make your own basic payload all you need is a basic knowledge of html or javascript. Theseus acts like a legitimate HTTP server therefore for more complex payloads you can serve up a fully functional html, css, javascript website:
 
