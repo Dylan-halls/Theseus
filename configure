@@ -1,0 +1,6 @@
+#!/bin/bash
+
+eval pip3 install pyyaml 
+eval pip3 install ua-parser 
+eval pip3 install user-agents
+eval sudo apt-get install python3-dnslib
