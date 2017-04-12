@@ -1,15 +1,13 @@
 language: python
 
+sudo: required
+
 python:
-	
-	- 3
-	-3.5
+  - "3.5"
 
-before_script:
-	
-	- pip3 install pyyaml ua-parser user-agents
-	- pip3 install dnslib
+before_install:
+ - chmod +x src/Theseus.py
+ - chmod +x configure
+ - ./configure
 
-script:
-
-	- /src/Theseus.py
+script: sudo python3 src/Theseus.py -h
