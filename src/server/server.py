@@ -1,6 +1,6 @@
 #from OpenSSL import SSL
 import socket
-from lib.user_agents import parse
+from user_agents import parse
 import multiprocessing
 import ssl
 import sys

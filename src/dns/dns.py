@@ -1,4 +1,4 @@
-from lib.dnslib import *
+from dnslib import *
 import sys
 import argparse
 import socket
