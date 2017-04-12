@@ -1,0 +1,13 @@
+language: python
+
+sudo: required
+
+python:
+  - "3.5"
+
+before_install:
+ - chmod +x src/Theseus.py
+ - chmod +x configure
+ - ./configure
+
+script: sudo python3 src/Theseus.py -h
