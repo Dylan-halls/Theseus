@@ -1,7 +1,7 @@
 import sys
 from collections import namedtuple
 
-from ua_parser import user_agent_parser
+import user_agent_parser
 
 
 PY2 = sys.version_info[0] == 2
