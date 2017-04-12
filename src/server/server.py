@@ -62,14 +62,8 @@ class HTTP_Server(object):
 
 			#Print Status Message
 			try:
-<<<<<<< HEAD
 				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
 			except: pass
-=======
-				ua = parse(user_agent)
-				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
-			except UnboundLocalError: pass
->>>>>>> 916b57c65928f7b8acf056f3fb0d89d7082e1a13
 
 			#Send File
 			if path == '/':
