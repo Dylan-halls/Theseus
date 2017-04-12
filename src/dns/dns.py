@@ -54,11 +54,11 @@ class Decode_Packet(object):
 
 class DNS_Server(object):
 	"""This class will complete the dns spoof so the target will connect to the proxy server"""
-	def __init__(self):
+	def __init__(self, local_ip):
 		global s, dp
 		super(DNS_Server, self).__init__()
 		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-		s.bind(('192.168.1.115', 53))
+		s.bind((local_ip, 53))
 		dp = Decode_Packet()
 
 	def decode_packet(self, pkt):

@@ -78,8 +78,8 @@ class Theseus(object):
 
 	def attack_dns_spoof(self):
 		if bool(cfg.get('DNS-Spoof-Settings', 'Running')) == True:
-			dns = DNS_Server()
 			local = cfg.get('Theseus-Settings', 'local_ip_address')
+			dns = DNS_Server(local)
 			jobs = []
 			for i in range(4):
 		   		p = multiprocessing.Process(target=self.dns_spoof, args=(dns, local))
@@ -92,7 +92,7 @@ class Theseus(object):
 
 			p = Arp_Ping(args.interface)
 			sys.stdout.write("[\033[1;34m+\033[00m] Sending arp ping to {} \n".format(args.target))
-			p.ping(args.target)
+			p.ping(args.target, local, args.interface)
 			while True:
 				tm = p.await_responce(args.interface)
 				try:
@@ -158,3 +158,5 @@ if __name__ == '__main__':
 		t.attack_arp_to_content_force_Server()
 	except KeyboardInterrupt:
 		exit()
+
+#

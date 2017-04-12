@@ -74,9 +74,14 @@ class Arp_Ping(object):
 			rev += 1
 			return self.format_mac(binascii.hexlify(arp_d[5]).decode('utf-8')), arp_d[6], timee.total_seconds() * 1000
 
-	def ping(self, addr):
+	def ping(self, addr, local, iface):
 		global start_time, sent
+<<<<<<< HEAD
 		request_packet = self.craft_packet(requested_ip=addr, responce_to_ip='192.168.1.199', responce_to_mac='5c:e0:c5:a0:d7:91', send_to_mac='FF:FF:FF:FF:FF:FF')
+=======
+		local_mac = open('/sys/class/net/{}/address'.format(iface)).read().strip('\n')
+		request_packet = self.craft_packet(requested_ip=addr, responce_to_ip=local, responce_to_mac=local_mac, send_to_mac='FF:FF:FF:FF:FF:FF')
+>>>>>>> 916b57c65928f7b8acf056f3fb0d89d7082e1a13
 		s.send(request_packet)
 		start_time = datetime.datetime.now()
 		sent += 1

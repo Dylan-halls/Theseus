@@ -10,10 +10,9 @@ class HTTP_Server(object):
 	def __init__(self, bind_address, bind_port, html_file):
 		global http_responce, s, html
 		super(HTTP_Server, self).__init__()
-		with open('server/server.log', 'w') as f:
+		with open('server.log', 'w') as f:
 			f.write('')
 			f.close()
-		#TODO: Change responce content-type to relevant type
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 		try:
@@ -57,15 +56,20 @@ class HTTP_Server(object):
 				Referer = data.splitlines()[6]
 				Connection = data.splitlines()[7]
 				Cache_Control = data.splitlines()[8]
-				ua = parse(user_agent)
 			except IndexError:
 				pass
 
 
 			#Print Status Message
 			try:
+<<<<<<< HEAD
 				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
 			except: pass
+=======
+				ua = parse(user_agent)
+				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
+			except UnboundLocalError: pass
+>>>>>>> 916b57c65928f7b8acf056f3fb0d89d7082e1a13
 
 			#Send File
 			if path == '/':
