@@ -45,7 +45,7 @@ class HTTP_Server(object):
 				request_line = request.rstrip('\r\n')
 				request_method, path, request_version = request_line.split()
 			except ValueError:
-				pass
+				path = ' '
 
 			#Parse all the other main headers
 			try:
@@ -61,9 +61,8 @@ class HTTP_Server(object):
 
 
 			#Print Status Message
-			try:
-				print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
-			except: pass
+			ua = parse(user_agent)
+			print("[ HTTP ]", "[" ,datetime.now(), "]", "[" ,addr[0], "]", "[", str(ua).replace(" / ", '-') ,"]", request)
 
 			#Send File
 			if path == '/':

@@ -1,7 +1,10 @@
+import json
+import os
 import unittest
 
 from ua_parser import user_agent_parser
-from .parsers import parse, UserAgent
+from . import compat
+from .parsers import parse
 
 
 iphone_ua_string = 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3'
@@ -24,6 +27,10 @@ windows_ie_ua_string = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Tride
 ubuntu_firefox_ua_string = 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:15.0) Gecko/20100101 Firefox/15.0.1'
 google_bot_ua_string = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 nokia_n97_ua_string = 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/12.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1; en-us) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.12344'
+android_firefox_aurora_ua_string = 'Mozilla/5.0 (Android; Mobile; rv:27.0) Gecko/27.0 Firefox/27.0'
+thunderbird_ua_string = 'Mozilla/5.0 (X11; Linux x86_64; rv:38.0) Gecko/20100101 Thunderbird/38.2.0 Lightning/4.0.2'
+outlook_usa_string = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/6.0; Microsoft Outlook 15.0.4420)'
+chromebook_ua_string = 'Mozilla/5.0 (X11; CrOS i686 0.12.433) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.77 Safari/534.30'
 
 iphone_ua = parse(iphone_ua_string)
 ipad_ua = parse(ipad_ua_string)
@@ -45,21 +52,27 @@ windows_ie_ua = parse(windows_ie_ua_string)
 ubuntu_firefox_ua = parse(ubuntu_firefox_ua_string)
 google_bot_ua = parse(google_bot_ua_string)
 nokia_n97_ua = parse(nokia_n97_ua_string)
+android_firefox_aurora_ua = parse(android_firefox_aurora_ua_string)
+thunderbird_ua = parse(thunderbird_ua_string)
+outlook_ua = parse(outlook_usa_string)
+chromebook_ua = parse(chromebook_ua_string)
 
 
 class UserAgentsTest(unittest.TestCase):
 
     def test_user_agent_object_assignments(self):
-        ua_dict = user_agent_parser.Parse(iphone_ua_string)
+        ua_dict = user_agent_parser.Parse(devices['iphone']['ua_string'])
+        iphone_ua = devices['iphone']['user_agent']
 
         # Ensure browser attributes are assigned correctly
         self.assertEqual(iphone_ua.browser.family,
                          ua_dict['user_agent']['family'])
         self.assertEqual(
             iphone_ua.browser.version,
-            (int(ua_dict['user_agent']['major']), int(ua_dict['user_agent']['minor']))
+            (int(ua_dict['user_agent']['major']),
+             int(ua_dict['user_agent']['minor']))
         )
-        
+
         # Ensure os attributes are assigned correctly
         self.assertEqual(iphone_ua.os.family, ua_dict['os']['family'])
         self.assertEqual(
@@ -90,6 +103,7 @@ class UserAgentsTest(unittest.TestCase):
         self.assertTrue(playbook_ua.is_tablet)
         self.assertTrue(kindle_fire_ua.is_tablet)
         self.assertTrue(nexus_7_ua.is_tablet)
+        self.assertFalse(android_firefox_aurora_ua.is_tablet)
 
     def test_is_mobile_property(self):
         self.assertTrue(iphone_ua.is_mobile)
@@ -110,6 +124,7 @@ class UserAgentsTest(unittest.TestCase):
         self.assertFalse(windows_ie_ua.is_mobile)
         self.assertFalse(ubuntu_firefox_ua.is_mobile)
         self.assertFalse(google_bot_ua.is_mobile)
+        self.assertTrue(android_firefox_aurora_ua.is_mobile)
 
     def test_is_touch_property(self):
         self.assertTrue(iphone_ua.is_touch_capable)
@@ -130,6 +145,7 @@ class UserAgentsTest(unittest.TestCase):
         self.assertFalse(ubuntu_firefox_ua.is_touch_capable)
         self.assertFalse(google_bot_ua.is_touch_capable)
         self.assertFalse(nokia_n97_ua.is_touch_capable)
+        self.assertTrue(android_firefox_aurora_ua.is_touch_capable)
 
     def test_is_pc(self):
         self.assertFalse(iphone_ua.is_pc)
@@ -140,7 +156,7 @@ class UserAgentsTest(unittest.TestCase):
         self.assertFalse(nexus_7_ua.is_pc)
         self.assertFalse(windows_phone_ua.is_pc)
         self.assertFalse(blackberry_bold_touch_ua.is_pc)
-        self.assertFalse(blackberry_torch_ua.is_pc)        
+        self.assertFalse(blackberry_torch_ua.is_pc)
         self.assertFalse(blackberry_bold_ua.is_pc)
         self.assertFalse(j2me_opera_ua.is_pc)
         self.assertFalse(google_bot_ua.is_pc)
@@ -150,6 +166,8 @@ class UserAgentsTest(unittest.TestCase):
         self.assertTrue(ubuntu_firefox_ua.is_pc)
         self.assertTrue(ie_touch_ua.is_pc)
         self.assertTrue(ie_ua.is_pc)
+        self.assertFalse(android_firefox_aurora_ua.is_pc)
+        self.assertTrue(chromebook_ua.is_pc)
 
     def test_is_bot(self):
         self.assertTrue(google_bot_ua.is_bot)
@@ -161,12 +179,90 @@ class UserAgentsTest(unittest.TestCase):
         self.assertFalse(nexus_7_ua.is_bot)
         self.assertFalse(windows_phone_ua.is_bot)
         self.assertFalse(blackberry_bold_touch_ua.is_bot)
-        self.assertFalse(blackberry_torch_ua.is_bot)        
+        self.assertFalse(blackberry_torch_ua.is_bot)
         self.assertFalse(blackberry_bold_ua.is_bot)
-        self.assertFalse(j2me_opera_ua.is_bot)        
+        self.assertFalse(j2me_opera_ua.is_bot)
         self.assertFalse(mac_safari_ua.is_bot)
         self.assertFalse(windows_ie_ua.is_bot)
         self.assertFalse(ubuntu_firefox_ua.is_bot)
         self.assertFalse(ie_touch_ua.is_bot)
         self.assertFalse(ie_ua.is_bot)
         self.assertFalse(nokia_n97_ua.is_bot)
+        self.assertFalse(android_firefox_aurora_ua.is_bot)
+
+    def test_is_email_client(self):
+        self.assertTrue(thunderbird_ua.is_email_client)
+        self.assertTrue(outlook_ua.is_email_client)
+        self.assertFalse(playbook_ua.is_email_client)
+        self.assertFalse(kindle_fire_ua.is_email_client)
+        self.assertFalse(nexus_7_ua.is_email_client)
+        self.assertFalse(windows_phone_ua.is_email_client)
+        self.assertFalse(blackberry_bold_touch_ua.is_email_client)
+        self.assertFalse(blackberry_torch_ua.is_email_client)
+        self.assertFalse(blackberry_bold_ua.is_email_client)
+        self.assertFalse(j2me_opera_ua.is_email_client)
+        self.assertFalse(mac_safari_ua.is_email_client)
+        self.assertFalse(windows_ie_ua.is_email_client)
+        self.assertFalse(ubuntu_firefox_ua.is_email_client)
+        self.assertFalse(ie_touch_ua.is_email_client)
+        self.assertFalse(ie_ua.is_email_client)
+        self.assertFalse(nokia_n97_ua.is_email_client)
+        self.assertFalse(android_firefox_aurora_ua.is_email_client)
+
+
+    def test_strings(self):
+        self.assertEqual(str(iphone_ua), "iPhone / iOS 5.1 / Mobile Safari 5.1")
+        self.assertEqual(str(ipad_ua), "iPad / iOS 3.2 / Mobile Safari 4.0.4")
+        self.assertEqual(str(galaxy_tab), "Samsung SCH-I800 / Android 2.2 / Android 2.2")
+        self.assertEqual(str(galaxy_s3_ua), "Samsung GT-I9300 / Android 4.0.4 / Android 4.0.4")
+        self.assertEqual(str(kindle_fire_ua), "Kindle / Android / Amazon Silk 1.1.0-80")
+        self.assertEqual(str(playbook_ua), "BlackBerry Playbook / BlackBerry Tablet OS 2.0.1 / BlackBerry WebKit 2.0.1")
+        self.assertEqual(str(nexus_7_ua), "Asus Nexus 7 / Android 4.1.1 / Chrome 18.0.1025")
+        self.assertEqual(str(windows_phone_ua), "Samsung SGH-i917 / Windows Phone 7.5 / IE Mobile 9.0")
+        self.assertEqual(str(windows_rt_ua), "PC / Windows RT / IE 10.0")
+        self.assertEqual(str(blackberry_torch_ua), "BlackBerry 9800 / BlackBerry OS 6.0.0 / BlackBerry WebKit 6.0.0")
+        self.assertEqual(str(blackberry_bold_ua), "BlackBerry 9700 / BlackBerry OS 5.0.0 / BlackBerry 9700")
+        self.assertEqual(str(blackberry_bold_touch_ua), "BlackBerry 9930 / BlackBerry OS 7.0.0 / BlackBerry WebKit 7.0.0")
+        self.assertEqual(str(j2me_opera_ua), "Generic Feature Phone / Other / Opera Mini 9.80")
+        self.assertEqual(str(ie_ua), "PC / Windows 8 / IE 10.0")
+        self.assertEqual(str(ie_touch_ua), "PC / Windows 8 / IE 10.0")
+        self.assertEqual(str(mac_safari_ua), "PC / Mac OS X 10.6.8 / WebKit Nightly 537.13")
+        self.assertEqual(str(windows_ie_ua), "PC / Windows 7 / IE 9.0")
+        self.assertEqual(str(ubuntu_firefox_ua), "PC / Ubuntu / Firefox 15.0.1")
+        self.assertEqual(str(google_bot_ua), "Spider / Other / Googlebot 2.1")
+        self.assertEqual(str(nokia_n97_ua), "Nokia N97 / Symbian OS 9.4 / Nokia Browser 7.1.12344")
+        self.assertEqual(str(android_firefox_aurora_ua), "Generic Smartphone / Android / Firefox Mobile 27.0")
+
+    def test_unicode_strings(self):
+        try:
+            # Python 2
+            unicode_ua_str = unicode(devices['iphone']['user_agent'])
+            self.assertEqual(unicode_ua_str,
+                             u"iPhone / iOS 5.1 / Mobile Safari 5.1")
+            self.assertTrue(isinstance(unicode_ua_str, unicode))
+        except NameError:
+            # Python 3
+            unicode_ua_str = str(devices['iphone']['user_agent'])
+            self.assertEqual(unicode_ua_str,
+                             "iPhone / iOS 5.1 / Mobile Safari 5.1")
+
+
+with open(os.path.join(os.path.dirname(__file__), 'devices.json')) as f:
+    devices = json.load(f)
+
+
+def test_wrapper(items):
+    def test_func(self):
+        attrs = ('is_bot', 'is_mobile',
+                 'is_pc', 'is_tablet', 'is_touch_capable')
+        for attr in attrs:
+            self.assertEqual(
+                getattr(items['user_agent'], attr), items[attr], msg=attr)
+        # Temporarily commenting this out since UserAgent.device
+        # may return different string depending ua-parser version
+        # self.assertEqual(str(items['user_agent']), items['str'])
+    return test_func
+
+for device, items in compat.iteritems(devices):
+    items['user_agent'] = parse(items['ua_string'])
+    setattr(UserAgentsTest, 'test_' + device, test_wrapper(items))
