@@ -1,5 +1,566 @@
 GET / HTTP/1.1
-Host: www.fbi.gov
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: google.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: google.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: NID=100=nP0FUF1vY_URDOaJdc_DfXPI9TowP2CjqJmmiCAiiQS0fccODiy-0V6x6u2lja6x0_axwZP2qAJsJ5orTONckbyCI9n2a35iNqlAukm8JQKCgRM7NFQYkzmhjdSwsg7R
+Connection: keep-alive
+
+POST /Radio.asmx HTTP/1.1
+CONNECTION: close
+ACCEPT-ENCODING: gzip
+HOST: legato.radiotime.com
+USER-AGENT: Linux UPnP/1.0 Sonos/34.16-37101 (ZPS6)
+CONTENT-LENGTH: 357
+CONTENT-TYPE: text/xml; charset="utf-8"
+SOAPACTION: "http://www.sonos.com/Services/1.1#getMediaMetadata"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Header><credentials xmlns="http://www.sonos.com/Services/1.1"><deviceId>5C-AA-FD-04-E9-CE:G</deviceId><deviceProvider>Sonos</deviceProvider></credentials></s:Header><s:Body><getMediaMetadata xmlns="http://www.sonos.com/Services/1.1"><id>s244863</id></getMediaMetadata></s:Body></s:Envelope>GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/15.23.20053 Chrome/45.0.2454.85 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: itbbqudqpbiiq
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: jsfxounbncxm
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: kxnossrrjgttbi
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Content-Type: application/soap+xml
+User-Agent: WSDAPI
+Content-Length: 520
+Host: 172.16.10.10
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery"><soap:Header><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To><wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Probe</wsa:Action><wsa:MessageID>urn:uuid:480b5547-90ff-4e12-9142-009a517d3203</wsa:MessageID></soap:Header><soap:Body><wsd:Probe/></soap:Body></soap:Envelope>GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/15.23.20053 Chrome/45.0.2454.85 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/15.23.20053 Chrome/45.0.2454.85 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Content-Type: application/soap+xml
+User-Agent: WSDAPI
+Content-Length: 520
+Host: 172.16.10.10
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery"><soap:Header><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To><wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Probe</wsa:Action><wsa:MessageID>urn:uuid:9465a686-8588-47e4-a028-9bc6f89a34a5</wsa:MessageID></soap:Header><soap:Body><wsd:Probe/></soap:Body></soap:Envelope>GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+HEAD / HTTP/1.1
+Host: noyvzumrsuisypz
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: hsjdymu
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: ijxkkwwunzdf
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET / HTTP/1.0
+Host: conn.skype.com
+User-Agent: Skype WISPr
+
+GET / HTTP/1.0
+Host: conn.skype.com
+User-Agent: Skype WISPr
+
+GET / HTTP/1.0
+Host: conn.skype.com
+User-Agent: Skype WISPr
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) ReaderServices/15.23.20053 Chrome/45.0.2454.85 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.8
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Host: wpad
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Content-Type: application/soap+xml
+User-Agent: WSDAPI
+Content-Length: 520
+Host: 172.16.10.10
+
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery"><soap:Header><wsa:To>urn:schemas-xmlsoap-org:ws:2005:04:discovery</wsa:To><wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/Probe</wsa:Action><wsa:MessageID>urn:uuid:3eefbeeb-2001-4ed2-bb0b-68ebb210ef85</wsa:MessageID></soap:Header><soap:Body><wsd:Probe/></soap:Body></soap:Envelope>GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+HEAD / HTTP/1.1
+Host: aponwrswshh
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: kbeltpixyv
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+HEAD / HTTP/1.1
+Host: oojogpdd
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+Accept-Encoding: gzip, deflate
+
+GET /wpad.dat HTTP/1.1
+Connection: Keep-Alive
+Accept: */*
+User-Agent: WinHttp-Autoproxy-Service/5.1
+Host: wpad.optoma-uk.local
+
+GET / HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://google.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://google.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://bbc.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://bbc.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://theseus.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://theseus.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: theseus.com
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
 Accept-Language: en-US,en;q=0.5
@@ -7,10 +568,1546 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Cache-Control: max-age=0
 
+GET /payload.css HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://theseus.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: theseus.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://theseus.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
 GET /lock.png HTTP/1.1
-Host: www.fbi.gov
+Host: theseus.com
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: dwedw.dewdwe
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: dwedw.dewdwe
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://dwedw.dewdwe/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: dwedw.dewdwe
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://dwedw.dewdwe/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: dwedw.dewdwe
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET / HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET / HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://fd/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /lock.png HTTP/1.1
+Host: fd
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: GMAIL_RTT=54
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: GMAIL_RTT=54
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: GMAIL_RTT=54
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://mail.google.com/
+Cookie: GMAIL_RTT=54
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: mail.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: GMAIL_RTT=54
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: z
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: z
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://z/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: z
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://z/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: z
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://z/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: z
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: twitter.xom
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: twitter.xom
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.xom/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: twitter.xom
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.xom/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: twitter.xom
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.xom/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: twitter.xom
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: 192.168.1.115
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: 192.168.1.115
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.115/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: 192.168.1.115
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.115/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: 192.168.1.115
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.115/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: 192.168.1.115
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: 192.168.1.254
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: 192.168.1.254
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.254/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: 192.168.1.254
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.254/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: 192.168.1.254
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.254/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: 192.168.1.254
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET http://www.baidu.com/ HTTP/1.1
+Host: www.baidu.com
+Accept: */*
+Content-Type: text/html
+Proxy-Connection: Keep-Alive
+Content-length: 0
+
+GET / HTTP/1.1
+Host: 111.111.111.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: 111.111.111.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://111.111.111.1/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: 111.111.111.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://111.111.111.1/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: 111.111.111.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://111.111.111.1/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: 111.111.111.1
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+User-Agent: Wget/1.17.1 (linux-gnu)
+Accept: */*
+Accept-Encoding: identity
+Host: www.poo.com
+Connection: Keep-Alive
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: www.google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.google.com/
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.js HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Cookie: ASPSESSIONIDSQBQDAAC=KJAMJDGAGOAJCKONKHMLFCLN
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /favicon.ico HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://google.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://google.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://google.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: google.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /s2/favicons?domain=https://www.youtube.com HTTP/1.1
+Host: www.google.com
+Referer: http://127.0.0.1:20489/mostvisited/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept: */*
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+Cookie: NID=95=sB_xgPYXHa4m2NCuItmcr9_5Qdmb1IaI5MYoJwtiVfOOjNtChb5GmhLhNN2UJenlQaK1YFkj50rzVX0nv0CnIZ29NmjnGY9DjWsDFMw3R4Sx0cZ7rcMjhMeqHSlSsytZ
+
+POST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vPOST /msl/nrdjs/2.4.4 HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip
+Connection: Keep-Alive
+Content-Length: 8563
+Cookie: nfvdid=BQFmAAEBEJsrne1US9Nb3%2FelUVkiELJgD0DLHH8WYoBG3kTL8q5xghcH0Y0892kFDjvwoNU185%2BFVP6sh34wuprV09N7DSqJWBAQzLLLOLiG%2F1vDoHQmcSiKxORTYP5Y4FYLpLbV%2F7gpApWB6XC454gzSuG%2FBSeG; memclid=U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE; nflx-rgn=ew1|1478726316116; VisitorId=002~U1NUVi1KWk0xLTAwMDAwMDAwMDAwMDAwMDEwODkxNDE~1480451321484~true~1480451321606~; NetflixId=ct%3DBQAOAAEBEHxipTDZNJEdvKQkNr32vy2CQAPqciZq3YAERlcIupdey0O6XNF5gZxq8cLZK90EMijHzbyYndWKwSJw1LU996pWigEiA-SVwR8caF03fz9zN9AgJ2Wd_fTPH5_PuFcQ750VNMX3iDLZBvxadujwf-YdcULqLlo3y6Lt2ROuqbBVd8hrgjLQ1oIsNpLWDHRV4dd58PglqNhCXLV8V_407vCtKFdfly-UFQIVtVYbs7uXaJKdXU_Nv6WncVKMAeqaYnVeA7u__Le7f1Al7fokIo5i_34v9IARfE1SeUi1HW9rlr_4f3gaQigo1huWxerxbwD11WuEqaZMds97nSUkkmsdByLbR2ZVUk_Gx7NX3v_RS11jJoQjyo_NZYvU0YzfQI9n5aHXCU3wYvAK50TdFMlcfqpmw27mHWWfnfJc-03c22acaZxLvelxfDM5dmwZW_6oucOxc7tK4McjOCT-IMftJHGcF3BOJ0Rl94_KVRv628mhqhIYb_s8m5hL9jO6oT47vGET /?gfe_rd=cr&ei=BmHqWKmtJ-vv8AetxrjwBA HTTP/1.1
+Host: www.google.co.uk
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+Cookie: NID=95=CLydS06x06meVi5kdhLM5aP5oIII5fmKh01SP_4BhMyfMC7DO5yGIePggO7FiwmcNxcqSq3EDzlsmcT3pXCKT4K9xx1jWskB3cB4A2zoXIOTjbpKBiGKE5GRAGBiYtKJ
+
+GET /Public/network/files/check.xml HTTP/1.1
+Host: cdn.samsungcloudsolution.com
+Accept: */*
+
+GET /Public/network/files/check.xml HTTP/1.1
+Host: cdn.samsungcloudsolution.com
+Accept: */*
+
+GET / HTTP/1.1
+Host: dddd.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /payload.css HTTP/1.1
+Host: dddd.com
+Accept: text/css,*/*;q=0.1
+Referer: http://dddd.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: dddd.com
+Referer: http://dddd.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept: */*
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /payload.js HTTP/1.1
+Host: dddd.com
+Accept: */*
+Referer: http://dddd.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /lock.png HTTP/1.1
+Host: dddd.com
+Referer: http://dddd.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept: */*
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET / HTTP/1.1
+Host: bbc.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /payload.css HTTP/1.1
+Host: bbc.com
+Accept: text/css,*/*;q=0.1
+Referer: http://bbc.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: bbc.com
+Referer: http://bbc.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept: */*
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /payload.js HTTP/1.1
+Host: bbc.com
+Accept: */*
+Referer: http://bbc.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET /lock.png HTTP/1.1
+Host: bbc.com
+Referer: http://bbc.com/
+User-Agent: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.4.0) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.1 TV Safari/538.1
+Accept: */*
+Accept-Charset: iso-8859-1, utf-8, utf-16, *;q=0.1
+DNT: 0
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB
+Connection: Keep-Alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /favicon.ico HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate
 Connection: keep-alive

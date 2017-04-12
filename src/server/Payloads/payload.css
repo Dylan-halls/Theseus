@@ -1,0 +1,15 @@
+ body {
+    background-color: black;
+}
+
+img {
+    height: 500px;
+    width: 800px;
+    background: black;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+}

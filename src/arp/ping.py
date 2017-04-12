@@ -76,7 +76,7 @@ class Arp_Ping(object):
 
 	def ping(self, addr):
 		global start_time, sent
-		request_packet = self.craft_packet(requested_ip=addr, responce_to_ip='192.168.1.115', responce_to_mac='5c:e0:c5:a0:d7:91', send_to_mac='FF:FF:FF:FF:FF:FF')
+		request_packet = self.craft_packet(requested_ip=addr, responce_to_ip='192.168.1.199', responce_to_mac='5c:e0:c5:a0:d7:91', send_to_mac='FF:FF:FF:FF:FF:FF')
 		s.send(request_packet)
 		start_time = datetime.datetime.now()
 		sent += 1

