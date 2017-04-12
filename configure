@@ -1,5 +1,8 @@
 #!/bin/bash
 
+eval sudo apt-get update 
+eval sudo apt-get upgrade
+eval sudo apt-get install python3-pip
 eval pip3 install pyyaml 
 eval pip3 install ua-parser 
 eval pip3 install user-agents
