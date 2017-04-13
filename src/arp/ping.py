@@ -24,7 +24,6 @@ class Arp_Ping(object):
 	def craft_packet(self, requested_ip=None, responce_to_ip=None, responce_to_mac=None, send_to_mac=None):
 		#thanks to techb for help
 		if requested_ip and responce_to_ip and responce_to_mac and send_to_mac != None:
-			#target_mac='FF:FF:FF:FF:FF:FF'
 			arp_header_code = '\x08\x06'
 			target_ip = socket.inet_aton(requested_ip)
 			target_mac = binascii.unhexlify(''.join(send_to_mac.split(':')))

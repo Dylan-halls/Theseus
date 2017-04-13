@@ -2960,3 +2960,884 @@ Referer: http://bbc.com/
 Connection: keep-alive
 Cache-Control: max-age=0
 
+GET /idcta/translations?callback&locale=en-GB HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /idcta/config?callback&locale=en-GB&ptrt=http://www.bbc.co.uk/ HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /idcta/translations?callback&locale=en-GB HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /idcta/config?callback&locale=en-GB&ptrt=http://www.bbc.co.uk/ HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /idcta/translations?callback&locale=en-GB HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /idcta/config?callback&locale=en-GB&ptrt=http://www.bbc.co.uk/ HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /idcta/translations?callback&locale=en-GB HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /idcta/config?callback&locale=en-GB&ptrt=http://www.bbc.co.uk/ HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /idcta/translations?callback&locale=en-GB HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /idcta/config?callback&locale=en-GB&ptrt=http://www.bbc.co.uk/ HTTP/1.1
+Host: www.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}
+Connection: keep-alive
+
+GET /searchbox-app/1.0.16/searchboxDrawer.js HTTP/1.1
+Host: search.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cog.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zx6fv.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /curationkit-ichef/384x216/cpsprodpb/13832/production/_95622997_leicester15_getty.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zw9mn.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cog.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zx6fv.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /curationkit-ichef/384x216/cpsprodpb/13832/production/_95622997_leicester15_getty.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zw9mn.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cog.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zx6fv.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /curationkit-ichef/384x216/cpsprodpb/13832/production/_95622997_leicester15_getty.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zw9mn.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cog.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zx6fv.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zw9mn.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /orbit/1.0.0-412.eb05df4/cookie-prompt/en.js?callback=cookiePrompt HTTP/1.1
+Host: nav.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /images/ic/384x216/p04zw9mn.jpg HTTP/1.1
+Host: ichef.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /orbit/1.0.0-412.eb05df4/cookie-prompt/en.js?callback=cookiePrompt HTTP/1.1
+Host: nav.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /frameworks/relay/0.2.6/sharedmodules/relay-1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /orbit/1.0.0-412.eb05df4/cookie-prompt/en.js?callback=cookiePrompt HTTP/1.1
+Host: nav.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /frameworks/relay/0.2.6/sharedmodules/relay-1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /orbit/1.0.0-412.eb05df4/cookie-prompt/en.js?callback=cookiePrompt HTTP/1.1
+Host: nav.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /frameworks/relay/0.2.6/sharedmodules/relay-1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.woff HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /frameworks/relay/0.2.6/sharedmodules/relay-1.js HTTP/1.1
+Host: static.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.woff HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.woff HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.woff HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.woff HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: identity
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_light.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackTranslations.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackTranslations.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/images/cross_dark.svg HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.ttf HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.ttf HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.ttf HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET /id/0.36.25/modules/idcta/fallbackConfig.js HTTP/1.1
+Host: static.bbc.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://www.bbc.co.uk/
+Cookie: BBC-UID=2528ce3ed7cbaa8c12adc53791c99376652e675b776414d61aa0e7f2bd7442c40Mozilla/5.0%20(X11%3b%20Ubuntu%3b%20Linux%20i686%3b%20rv:47.0)%20Gecko/20100101%20Firefox/47.0; ckns_orb_fig_cache={%22uk%22:1%2C%22ck%22:1%2C%22ad%22:0%2C%22ap%22:0%2C%22tb%22:0%2C%22mb%22:0%2C%22eu%22:1}; ckns_policy=111; ckns_policy_exp=1523560237243
+Connection: keep-alive
+
+GET /s/homepage-v5/2484/fonts/GillSansW01Light.ttf HTTP/1.1
+Host: homepage.files.bbci.co.uk
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://homepage.files.bbci.co.uk/s/homepage-v5/2484/styles/main.css
+Origin: http://www.bbc.co.uk
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://twitter.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: twitter.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://facebook.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://facebook.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://facebook.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: facebook.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://bbc.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://bbc.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://bbc.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: bbc.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: webmaker.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: webmaker.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webmaker.org/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: webmaker.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webmaker.org/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: webmaker.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://webmaker.org/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: webmaker.org
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /payload.css HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/css,*/*;q=0.1
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /hacked.jpeg HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /payload.js HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://poo.com/
+Connection: keep-alive
+
+GET /lock.png HTTP/1.1
+Host: poo.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:47.0) Gecko/20100101 Firefox/47.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
