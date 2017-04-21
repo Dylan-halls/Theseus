@@ -7,9 +7,10 @@ from datetime import *
 
 class HTTP_Server(object):
 	"""This is the http page spoofing Server"""
-	def __init__(self, bind_address, bind_port, html_file):
+	def __init__(self, bind_address, payloads_folder):
 		global http_responce, s, html
 		super(HTTP_Server, self).__init__()
+		bind_port = 9000
 		with open('server.log', 'w') as f:
 			f.write('')
 			f.close()
@@ -21,7 +22,7 @@ class HTTP_Server(object):
 			sys.stdout.write("[\033[1;31m+\033[00m] Port {} already open... can\'t bind\n".format(bind_port))
 			sys.exit(-1)
 		s.listen(5)
-		with open(html_file, 'r') as file:
+		with open(payloads_folder+'/payload.html', 'r') as file:
 			html = file.read()
 			file.close()
 
@@ -49,7 +50,8 @@ class HTTP_Server(object):
 
 			#Parse all the other main headers
 			try:
-				user_agent = data.splitlines()[2]
+				#user_agent = data.splitlines()[2]
+				user_agent = ''.join([i[12:] for i in data.splitlines() if 'User-Agent:' in i])
 				Accept = data.splitlines()[3]
 				Accept_Language = data.splitlines()[4]
 				Accept_Encoding = data.splitlines()[5]
@@ -84,56 +86,24 @@ Content-Type: image/png
 				img = img_png.read()
 				sock.send(err_resp+img)
 				sock.close()
-			
+
 			else:
-				try:
-					e_resp = """
+				html_e_resp = """
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+""".encode('utf-8')
+
+				e_resp = """
 HTTP/1.1 200 OK
 
 """.encode('utf-8')
+				try:
 					with open(payloads_folder+path, 'rb') as file:
 						rfile = file.read()
 						file.close()
 						sock.send(e_resp+rfile)
 						sock.close()
-				except:
-					pass
-
-
-class SSL_Server(object):
-	"""This is the https page spoofing Server"""
-	def __init__(self, bind_address, bind_port, html_file, cert_file, key_file):
-		global ssl_socket, bs
-		super(SSL_Server, self).__init__()
-		context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
-		context.load_cert_chain(certfile=cert_file, keyfile=key_file)
-		bs = socket.socket()
-		bs.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-		#print("SSL -->", bind_address, bind_port)
-		bs.bind((bind_address, bind_port))
-		bs.listen(5)
-		with open(html_file, 'r') as file:
-			html = file.read()
-			file.close()
-
-	def _ssl_client_handler(self):
-		while True:
-			try:
-				sock, addr = bs.accept()
-			except KeyboardInterrupt: exit()
-			rec = sock.recv(1024)
-			#Drop SSL Connection Without error
-			sock.send(bytes("200 OK\r\n".encode('utf-8')))
-
-
-if __name__ == '__main__':
-	http_Server = HTTP_Server('192.168.1.115', 9000, 'Payloads/payload.html')
-	ssl_Server = SSL_Server('192.168.1.115', 4444, 'Payloads/payload.html')
-	jobs = []
-	for i in range (4):
-		p = multiprocessing.Process(target=http_Server._http_client_handler)
-		jobs.append(p)
-		p.start()
-		p2 = multiprocessing.Process(target=ssl_Server._ssl_client_handler())
-		jobs.append(p2)
-		p2.start()
+				except FileNotFoundError:
+					sock.sendall(html_e_resp+html.encode('utf-8'))
+					sock.close()

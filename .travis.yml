@@ -7,7 +7,9 @@ python:
 
 before_install:
  - chmod +x src/Theseus.py
- - chmod +x configure
- - ./configure
+ - pip3 install pyyaml
+ - pip3 install ua-parser
+ - pip3 install user-agents
+ - pip3 install pip3 install dnslib
 
 script: sudo python3 src/Theseus.py -h

