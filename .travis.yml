@@ -14,4 +14,4 @@ install_requires:
 before_install:
  - chmod +x src/Theseus.py
 
-script: sudo python3 src/Theseus.py -h
+script: ./configue
