@@ -43,7 +43,7 @@ wich file to send first
 This command accepts one argument either 'arp, icmp, dhcp' (only arp is working currently) and will tell Theseus how to become the mitm
 
     --gateway
-This will tell Theseus the gateway ip addres to attack
+This will tell Theseus the gateway ip address to attack
 
 ## Execution
 
