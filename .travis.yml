@@ -13,6 +13,6 @@ install_requires:
 
 before_install:
  - chmod +x src/Theseus.py
- - chmod +x configue
+ - chmod +x configure
 
-script: ./configue
+script: ./configure
