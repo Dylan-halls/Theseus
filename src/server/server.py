@@ -36,7 +36,7 @@ class HTTP_Server(object):
 
 			req = sock.recv(1024)
 			data = req.decode('utf-8')
-			with open('Server.log', 'a') as file:
+			with open('logs/content-force-server.log', 'a') as file:
 				file.write(data)
 				file.close()
 
