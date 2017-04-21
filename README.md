@@ -41,3 +41,10 @@ wich file to send first
 
     --spoof
 This command accepts one argument either 'arp, icmp, dhcp' (only arp is working currently) and will tell Theseus how to become the mitm
+
+    --gateway
+This will tell Theseus the gateway ip addres to attack
+
+## Execution
+
+    python3 Theseus.py --target <target ip address> --arp-ping --iface <interface> --force-content --spoof arp --gateway <gateway ip address>
