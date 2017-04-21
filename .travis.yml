@@ -5,11 +5,13 @@ sudo: required
 python:
   - "3.5"
 
-before_install:
- - chmod +x src/Theseus.py
+install_requires:
  - pip3 install pyyaml
  - pip3 install ua-parser
  - pip3 install user-agents
  - pip3 install dnslib
+
+before_install:
+ - chmod +x src/Theseus.py
 
 script: sudo python3 src/Theseus.py -h
