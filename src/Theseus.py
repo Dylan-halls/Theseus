@@ -31,8 +31,8 @@ class Theseus(object):
 		args = ap.parse_args()
 
 		log.status("Configuring iptables")
-		#Configure kernal and iptables for the attack
-		os.popen("{ echo 0 > /proc/sys/net/ipv4/ip_forward;\
+		#Configure kernal and iptables for the attack, change echo value to 0 if doesn't work
+		os.popen("{ echo 1 > /proc/sys/net/ipv4/ip_forward;\
 					iptables --flush;\
 					iptables --flush -t nat;\
 					iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 9000;\
